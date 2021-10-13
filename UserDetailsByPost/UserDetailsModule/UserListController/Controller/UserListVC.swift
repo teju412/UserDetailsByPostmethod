@@ -11,9 +11,7 @@ class UserListVC: UIViewController {
     var viewModel = UserViewModel()
 
     @IBOutlet weak var nameTF: UITextField!
-    @IBOutlet weak var genderTF: UITextField!
     @IBOutlet weak var emailTF: UITextField!
-    @IBOutlet weak var statusTF: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
