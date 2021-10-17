@@ -27,14 +27,15 @@ class UserListVC: UIViewController {
         guard let nametf = nameTF.text,
         let emailtf = emailTF.text,
         (femaleBttn.isSelected == true || maleBttn.isSelected == true) else { return }
-        let selectedGender = femaleBttn.isSelected ? "Female" : "Male"
+        let selectedGender = maleBttn.isSelected ? "Male" : "Female"
         let statusStr = statusSBttn.isOn ? "active" : "inactive"
         let postData = PostDetails(name: nametf, gender: selectedGender, email: emailtf, status: statusStr)
      
         viewModel.postUserData(data: postData).then({ reponse in
             self.showAlert(message: "Successfully submitted", actions:[
                     UIAlertAction(title: "OK", style: .default, handler: { _ in
-                print("OkayButton clicked")
+                        print("user data:\(reponse)")
+                        
             })])
         }).catch { error in
             print("eror")

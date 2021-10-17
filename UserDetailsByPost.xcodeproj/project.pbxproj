@@ -27,6 +27,8 @@
 		54D6635F271ACB5F00546CF8 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D6635E271ACB5F00546CF8 /* ShareViewController.swift */; };
 		54D66362271ACB5F00546CF8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D66360271ACB5F00546CF8 /* MainInterface.storyboard */; };
 		54D66366271ACB6000546CF8 /* TejaShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 54D6635C271ACB5F00546CF8 /* TejaShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		54D663AD271CE5EF00546CF8 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D663AB271CE5EE00546CF8 /* UserDetailTableViewCell.swift */; };
+		54D663AE271CE5EF00546CF8 /* UserDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54D663AC271CE5EE00546CF8 /* UserDetailTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		54D6635E271ACB5F00546CF8 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		54D66361271ACB5F00546CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		54D66363271ACB5F00546CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54D663AB271CE5EE00546CF8 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDetailTableViewCell.swift; path = UserDetailsByPost/UserDetailsModule/UserDetailController/View/UserDetailTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		54D663AC271CE5EE00546CF8 /* UserDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = UserDetailTableViewCell.xib; path = UserDetailsByPost/UserDetailsModule/UserDetailController/View/UserDetailTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +234,8 @@
 		54D662CF271673C000546CF8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				54D663AB271CE5EE00546CF8 /* UserDetailTableViewCell.swift */,
+				54D663AC271CE5EE00546CF8 /* UserDetailTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 				54D662232713CBBA00546CF8 /* LaunchScreen.storyboard in Resources */,
 				54D662342713CD8300546CF8 /* UserList.storyboard in Resources */,
 				54D662D52716745300546CF8 /* UserDetail.storyboard in Resources */,
+				54D663AE271CE5EF00546CF8 /* UserDetailTableViewCell.xib in Resources */,
 				54D662202713CBBA00546CF8 /* Assets.xcassets in Resources */,
 				54D6621E2713CBB500546CF8 /* Main.storyboard in Resources */,
 			);
@@ -372,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54D662D32716743500546CF8 /* UserDetailVC.swift in Sources */,
+				54D663AD271CE5EF00546CF8 /* UserDetailTableViewCell.swift in Sources */,
 				54D662172713CBB500546CF8 /* AppDelegate.swift in Sources */,
 				54D662362713D44900546CF8 /* DataManager.swift in Sources */,
 				54D662192713CBB500546CF8 /* SceneDelegate.swift in Sources */,
