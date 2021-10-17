@@ -13,23 +13,21 @@ class UserListVC: UIViewController {
 
     @IBOutlet weak var statusSBttn: UISwitch!
     @IBOutlet weak var maleBttn: UIButton!
-    @IBOutlet weak var Female: UIButton!
+    @IBOutlet weak var femaleBttn: UIButton!
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var emailTF: UITextField!
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        genderButtons = [Female, maleBttn]
-        let numbers = [1,2,2,1,2,1,3,4,5,6,4,34]
-        print("put the plants and push the code to git")
+        genderButtons = [femaleBttn, maleBttn]
     }
     
 
     @IBAction func submitBttnAction(_ sender: Any) {
         guard let nametf = nameTF.text,
         let emailtf = emailTF.text,
-        (Female.isSelected == true || maleBttn.isSelected == true) else { return }
-        let selectedGender = Female.isSelected ? "Female" : "Male"
+        (femaleBttn.isSelected == true || maleBttn.isSelected == true) else { return }
+        let selectedGender = femaleBttn.isSelected ? "Female" : "Male"
         let statusStr = statusSBttn.isOn ? "active" : "inactive"
         let postData = PostDetails(name: nametf, gender: selectedGender, email: emailtf, status: statusStr)
      

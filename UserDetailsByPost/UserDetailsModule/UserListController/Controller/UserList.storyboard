@@ -148,8 +148,8 @@
                     <navigationItem key="navigationItem" id="QxS-qI-hWd"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="Female" destination="VS8-eT-1o2" id="74d-CH-iVI"/>
                         <outlet property="emailTF" destination="E5p-IN-vQS" id="jou-ck-ZSe"/>
+                        <outlet property="femaleBttn" destination="VS8-eT-1o2" id="Oq0-i8-hKJ"/>
                         <outlet property="maleBttn" destination="6LH-n2-S3G" id="tla-6M-9Wn"/>
                         <outlet property="nameTF" destination="0Vh-pw-TxY" id="vDO-GD-Eom"/>
                         <outlet property="statusSBttn" destination="t7E-4Q-5Gb" id="0ct-jb-2jO"/>
