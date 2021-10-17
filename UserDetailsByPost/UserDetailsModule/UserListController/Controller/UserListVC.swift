@@ -9,19 +9,29 @@ import UIKit
 import Promises
 class UserListVC: UIViewController {
     var viewModel = UserViewModel()
+    var genderButtons: [UIButton]?
 
+    @IBOutlet weak var statusSBttn: UISwitch!
+    @IBOutlet weak var maleBttn: UIButton!
+    @IBOutlet weak var Female: UIButton!
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var emailTF: UITextField!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
+        genderButtons = [Female, maleBttn]
+        let numbers = [1,2,2,1,2,1,3,4,5,6,4,34]
+        print("put the plants and push the code to git")
     }
     
 
     @IBAction func submitBttnAction(_ sender: Any) {
         guard let nametf = nameTF.text,
-        let emailtf = emailTF.text else { return }
-        
-        let postData = PostDetails(name: nametf, gender: "", email: emailtf, status: "")
+        let emailtf = emailTF.text,
+        (Female.isSelected == true || maleBttn.isSelected == true) else { return }
+        let selectedGender = Female.isSelected ? "Female" : "Male"
+        let statusStr = statusSBttn.isOn ? "active" : "inactive"
+        let postData = PostDetails(name: nametf, gender: selectedGender, email: emailtf, status: statusStr)
      
         viewModel.postUserData(data: postData).then({ reponse in
             self.showAlert(message: "Successfully submitted", actions:[
@@ -33,8 +43,45 @@ class UserListVC: UIViewController {
         }
     }
     
+    @IBAction func genderButtonAction(_ sender: UIButton) {
+        genderButtons?.forEach({ $0.isSelected = false })
+        sender.isSelected = true
+//        if sender.tag == 1 {
+//            maleBttn.isSelected = true
+//            maleBttn.isSelected = false
+//            strGender = "male"
+//            print(strGender)
+//
+//        } else if sender.tag == 2 {
+//            maleBttn.isSelected = true
+//            maleBttn.isSelected = false
+//            strGender = "female"
+//            print(strGender)
+//
+//        }
+    }
+    @IBAction func statusSwitchAction(_ sender: UISwitch) {
+//        strStatus = sender.isOn ?  "active" : "Inactive"
+//        if sender.isOn {
+//            strStatus = "active"
+//        } else {
+//            strStatus = "inactive"
+//
+//        }
+    }
     
+//    @IBAction func femaleBttnAction(_ sender: Any) {
+//    }
+//    func chooseGender(gender: Gender) {
+//        switch gender {
+//        case .male:
+//            self.maleBttn.isSelected = true
+//        case .female:
+//            <#code#>
+//        }
+//    }
 }
+
 
 extension UIViewController {
     func showAlert(title: String = "", message: String = "", actions: [UIAlertAction]) {

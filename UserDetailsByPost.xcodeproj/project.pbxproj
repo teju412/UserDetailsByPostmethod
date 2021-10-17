@@ -21,11 +21,37 @@
 		54D6623F2713D58E00546CF8 /* Promises in Frameworks */ = {isa = PBXBuildFile; productRef = 54D6623E2713D58E00546CF8 /* Promises */; };
 		54D662412713D58E00546CF8 /* PromisesTestHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = 54D662402713D58E00546CF8 /* PromisesTestHelpers */; };
 		54D6624427159F5C00546CF8 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D6624327159F5C00546CF8 /* UserViewModel.swift */; };
-		54D662C82716610A00546CF8 /* Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 54D662C72716610A00546CF8 /* Selected.png */; };
 		54D662CA2716706600546CF8 /* AlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D662C92716706600546CF8 /* AlerViewController.swift */; };
 		54D662D32716743500546CF8 /* UserDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D662D22716743500546CF8 /* UserDetailVC.swift */; };
 		54D662D52716745300546CF8 /* UserDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D662D42716745300546CF8 /* UserDetail.storyboard */; };
+		54D6635F271ACB5F00546CF8 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D6635E271ACB5F00546CF8 /* ShareViewController.swift */; };
+		54D66362271ACB5F00546CF8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D66360271ACB5F00546CF8 /* MainInterface.storyboard */; };
+		54D66366271ACB6000546CF8 /* TejaShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 54D6635C271ACB5F00546CF8 /* TejaShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54D66364271ACB6000546CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54D6620B2713CBB500546CF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54D6635B271ACB5F00546CF8;
+			remoteInfo = TejaShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54D66367271ACB6000546CF8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				54D66366271ACB6000546CF8 /* TejaShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		54D662132713CBB500546CF8 /* UserDetailsByPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserDetailsByPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,10 +66,13 @@
 		54D662352713D44900546CF8 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		54D662372713D4BE00546CF8 /* UserSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchModel.swift; sourceTree = "<group>"; };
 		54D6624327159F5C00546CF8 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		54D662C72716610A00546CF8 /* Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Selected.png; sourceTree = "<group>"; };
 		54D662C92716706600546CF8 /* AlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlerViewController.swift; sourceTree = "<group>"; };
 		54D662D22716743500546CF8 /* UserDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailVC.swift; sourceTree = "<group>"; };
 		54D662D42716745300546CF8 /* UserDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDetail.storyboard; sourceTree = "<group>"; };
+		54D6635C271ACB5F00546CF8 /* TejaShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TejaShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D6635E271ACB5F00546CF8 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		54D66361271ACB5F00546CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		54D66363271ACB5F00546CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +87,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54D66359271ACB5F00546CF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				54D662152713CBB500546CF8 /* UserDetailsByPost */,
+				54D6635D271ACB5F00546CF8 /* TejaShare */,
 				54D662142713CBB500546CF8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				54D662132713CBB500546CF8 /* UserDetailsByPost.app */,
+				54D6635C271ACB5F00546CF8 /* TejaShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,7 +126,6 @@
 				54D6621F2713CBBA00546CF8 /* Assets.xcassets */,
 				54D662212713CBBA00546CF8 /* LaunchScreen.storyboard */,
 				54D662242713CBBA00546CF8 /* Info.plist */,
-				54D662C72716610A00546CF8 /* Selected.png */,
 			);
 			path = UserDetailsByPost;
 			sourceTree = "<group>";
@@ -211,6 +248,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		54D6635D271ACB5F00546CF8 /* TejaShare */ = {
+			isa = PBXGroup;
+			children = (
+				54D6635E271ACB5F00546CF8 /* ShareViewController.swift */,
+				54D66360271ACB5F00546CF8 /* MainInterface.storyboard */,
+				54D66363271ACB5F00546CF8 /* Info.plist */,
+			);
+			path = TejaShare;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -221,10 +268,12 @@
 				54D6620F2713CBB500546CF8 /* Sources */,
 				54D662102713CBB500546CF8 /* Frameworks */,
 				54D662112713CBB500546CF8 /* Resources */,
+				54D66367271ACB6000546CF8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				54D66365271ACB6000546CF8 /* PBXTargetDependency */,
 			);
 			name = UserDetailsByPost;
 			packageProductDependencies = (
@@ -237,6 +286,23 @@
 			productReference = 54D662132713CBB500546CF8 /* UserDetailsByPost.app */;
 			productType = "com.apple.product-type.application";
 		};
+		54D6635B271ACB5F00546CF8 /* TejaShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54D6636A271ACB6000546CF8 /* Build configuration list for PBXNativeTarget "TejaShare" */;
+			buildPhases = (
+				54D66358271ACB5F00546CF8 /* Sources */,
+				54D66359271ACB5F00546CF8 /* Frameworks */,
+				54D6635A271ACB5F00546CF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TejaShare;
+			productName = TejaShare;
+			productReference = 54D6635C271ACB5F00546CF8 /* TejaShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -248,6 +314,9 @@
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					54D662122713CBB500546CF8 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					54D6635B271ACB5F00546CF8 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
@@ -269,6 +338,7 @@
 			projectRoot = "";
 			targets = (
 				54D662122713CBB500546CF8 /* UserDetailsByPost */,
+				54D6635B271ACB5F00546CF8 /* TejaShare */,
 			);
 		};
 /* End PBXProject section */
@@ -282,8 +352,15 @@
 				54D662342713CD8300546CF8 /* UserList.storyboard in Resources */,
 				54D662D52716745300546CF8 /* UserDetail.storyboard in Resources */,
 				54D662202713CBBA00546CF8 /* Assets.xcassets in Resources */,
-				54D662C82716610A00546CF8 /* Selected.png in Resources */,
 				54D6621E2713CBB500546CF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D6635A271ACB5F00546CF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D66362271ACB5F00546CF8 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +382,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54D66358271ACB5F00546CF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D6635F271ACB5F00546CF8 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54D66365271ACB6000546CF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54D6635B271ACB5F00546CF8 /* TejaShare */;
+			targetProxy = 54D66364271ACB6000546CF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		54D6621C2713CBB500546CF8 /* Main.storyboard */ = {
@@ -322,6 +415,14 @@
 				54D662222713CBBA00546CF8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		54D66360271ACB5F00546CF8 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54D66361271ACB5F00546CF8 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -446,6 +547,7 @@
 		54D662282713CBBA00546CF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -474,6 +576,7 @@
 		54D662292713CBBA00546CF8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +602,56 @@
 			};
 			name = Release;
 		};
+		54D66368271ACB6000546CF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A32VHM5D6N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TejaShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TejaShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mittu.UserDetailsByPost.TejaShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54D66369271ACB6000546CF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A32VHM5D6N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TejaShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TejaShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mittu.UserDetailsByPost.TejaShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -516,6 +669,15 @@
 			buildConfigurations = (
 				54D662282713CBBA00546CF8 /* Debug */,
 				54D662292713CBBA00546CF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54D6636A271ACB6000546CF8 /* Build configuration list for PBXNativeTarget "TejaShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D66368271ACB6000546CF8 /* Debug */,
+				54D66369271ACB6000546CF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

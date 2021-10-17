@@ -14,6 +14,10 @@ struct PostDetails: Codable {
     let email: String
     let status: String
 }
+enum Gender {
+  case male
+  case female
+ }
 // getting response data
 struct ResponseForPost: Codable {
     var data: ResponseUserData?
